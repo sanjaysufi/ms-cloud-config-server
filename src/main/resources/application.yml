@@ -1,0 +1,31 @@
+server:
+  port: 8888
+info:
+  description: Micro Services for Cloud Config Server Service
+spring:
+  security:
+    user:
+      name: sanjaysufi
+      password: CloudSufi@fff-2021
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sanjaysufi/ms-cloud-config.git
+          #Verify any repository issue in service startup
+          cloneOnStart: true
+          force-pull: true
+          search-paths:
+            - '{application}'
+          # If you are using ssh key to connect private git repository use following configs
+          #
+          # uri: git@{gitserver}.com:/repourl
+          # ignoreLocalSshSettings: true
+          # hostKey: someHostKey
+          # hostKeyAlgorithm: ssh-rsa
+          # privateKey:
+          #           -----BEGIN RSA PRIVATE KEY-----
+          #           xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+          #           your SSH Key in ~/.ssh/id_rsa
+          #           xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+          #           -----END RSA PRIVATE KEY-----
