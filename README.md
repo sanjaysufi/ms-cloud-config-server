@@ -26,7 +26,8 @@ curl --location --request POST 'http://localhost:8888/encrypt' \
                                                                
 Step 4) put the same values to your properties variables into git cloud repo
 
-Step 5) for verification go to http://localhost:8888/ms-config-client/dev
+Step 5) for verification go to http://localhost:8888/ms-config-client/dev 
+You can find the encrypted value as decrypted automatically.
 
 
 #Reference 
