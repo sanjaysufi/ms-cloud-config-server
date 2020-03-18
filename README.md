@@ -1,6 +1,8 @@
 # ms-cloud-config-server
 
-Here I am encrypting and decrypting values from git config repo
+**For encryption/decryption**
+
+Steps for encrypting and decrypting values from git config repo
 
 Step 1) use keytool -genkeypair -alias mytestkey -keyalg RSA \
               -dname "CN=Web Server,OU=Unit,O=Organization,L=City,S=State,C=US" \
@@ -29,3 +31,10 @@ Step 5) for verification go to http://localhost:8888/ms-config-client/dev
 
 #Reference 
 https://projects.spring.io/spring-cloud/spring-cloud.html#_encryption_and_decryption_2
+
+**for Docker configuration**
+
+We have to add Dockerfile into root directory and can set our dependencies 
+
+#Reference 
+https://medium.com/@sairamkrish/docker-for-spring-boot-gradle-java-micro-service-done-the-right-way-2f46231dbc06
